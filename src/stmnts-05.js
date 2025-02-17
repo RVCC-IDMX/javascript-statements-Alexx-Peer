@@ -18,6 +18,7 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
  */
 function isInteger(value) {
+  return Number.isInteger(value);
   // Implementation goes here.
 }
 
@@ -28,6 +29,7 @@ function isInteger(value) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
  */
 function isOdd(num) {
+  return num % 2 !== 0;
   // Implementation goes here.
 }
 
@@ -38,6 +40,7 @@ function isOdd(num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
  */
 function isEven(num) {
+  return num % 2 == 0;
   // Implementation goes here.
 }
 
@@ -48,8 +51,10 @@ function isEven(num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators
  */
 function isNegative(value) {
-  // Implementation goes here.
+  return Number.isInteger(value) && value < 0;
 }
+// Implementation goes here.
+
 
 /**
  * Check if a number is positive.
@@ -58,6 +63,7 @@ function isNegative(value) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators
  */
 function isPositive(num) {
+  return Number.isInteger(num) && num > 0;
   // Implementation goes here.
 }
 
@@ -67,6 +73,7 @@ function isPositive(num) {
  * @returns {boolean} - True if num is exactly 0; false otherwise.
  */
 function isZero(num) {
+  return num === 0;
   // Implementation goes here.
 }
 
@@ -76,6 +83,7 @@ function isZero(num) {
  * @returns {boolean} - True if num is an integer and 0 or positive; false otherwise.
  */
 function isNonNegative(num) {
+  return Number.isInteger(num) && num >= 0;
   // Implementation goes here.
 }
 
@@ -87,6 +95,7 @@ function isNonNegative(num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
  */
 function isDivisibleBy(a, b) {
+  return Number.isInteger(a, b) && a % b === 0;
   // Implementation goes here.
 }
 
@@ -99,6 +108,7 @@ function isDivisibleBy(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators
  */
 function isBetween(num, min, max) {
+  return Number.isInteger(num, min, max) && num >= min && num <= max;
   // Implementation goes here.
 }
 
@@ -109,6 +119,7 @@ function isBetween(num, min, max) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
  */
 function isSquare(num) {
+  return Number.isInteger(num) && num >= 0 && Number.isInteger((Math.sqrt(num)));
   // Implementation goes here.
 }
 
@@ -119,6 +130,7 @@ function isSquare(num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt
  */
 function isCube(num) {
+  return Number.isInteger(num) && Number.isInteger(Math.cbrt(num));
   // Implementation goes here.
 }
 

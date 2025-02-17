@@ -20,6 +20,7 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition
  */
 function nextInteger(int) {
+  return int + 1;
   // Implementation goes here.
 }
 
@@ -31,6 +32,7 @@ function nextInteger(int) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function times(a, b) {
+  return a * b;
   // Implementation goes here.
 }
 
@@ -42,6 +44,7 @@ function times(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition
  */
 function add(a, b) {
+  return a + b;
   // Implementation goes here.
 }
 
@@ -53,6 +56,7 @@ function add(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction
  */
 function subtract(a, b) {
+  return a - b;
   // Implementation goes here.
 }
 
@@ -64,6 +68,12 @@ function subtract(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division
  */
 function divide(a, b) {
+  if (b == 0) {
+    return NaN;
+  }
+  else {
+    return a / b;
+  }
   // Implementation goes here.
 }
 
@@ -75,6 +85,7 @@ function divide(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
  */
 function modulus(a, b) {
+  return a % b;
   // Implementation goes here.
 }
 

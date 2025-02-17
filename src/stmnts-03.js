@@ -24,6 +24,7 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function rectanglePerimeter(width, height) {
+  return (2 * (width + height)).toFixed(2)
   // Implementation goes here.
 }
 
@@ -37,6 +38,8 @@ function rectanglePerimeter(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function rectangleArea(width, height) {
+  return (width * height).toFixed(2);
+
   // Implementation goes here.
 }
 
@@ -52,6 +55,7 @@ function rectangleArea(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function circleCircumference(radius) {
+  return (2 * Math.PI * radius).toFixed(2);
   // Implementation goes here.
 }
 
@@ -64,6 +68,7 @@ function circleCircumference(radius) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function circleArea(radius) {
+  return (Math.PI * (radius ** 2)).toFixed(2);
   // Implementation goes here.
 }
 
@@ -77,6 +82,7 @@ function circleArea(radius) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function triangleArea(base, height) {
+  return ((1 / 2) * base * height).toFixed(2);
   // Implementation goes here.
 }
 
@@ -90,6 +96,7 @@ function triangleArea(base, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
  */
 function pythagorean(sideA, sideB) {
+  return Math.sqrt((sideA ** 2) + (sideB ** 2)).toFixed(2);
   // Implementation goes here.
 }
 
@@ -103,6 +110,7 @@ function pythagorean(sideA, sideB) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
  */
 function rectangleDiagonal(width, height) {
+  return Math.sqrt((width ** 2) + (height ** 2)).toFixed(2);
   // Implementation goes here.
 }
 
@@ -119,6 +127,7 @@ function rectangleDiagonal(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division
  */
 function trapezoidArea(base1, base2, height) {
+  return (((base1 + base2) / 2) * height).toFixed(2);
   // Implementation goes here.
 }
 

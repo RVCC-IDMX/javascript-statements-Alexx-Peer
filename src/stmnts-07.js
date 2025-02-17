@@ -30,6 +30,7 @@ function isInteger(value) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND
  */
 function logicalAnd(a, b) {
+  return a > 0 && b > 0;
   // Implementation goes here.
 }
 
@@ -41,6 +42,7 @@ function logicalAnd(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
  */
 function logicalOr(a, b) {
+  return a > 0 || b > 0;
   // Implementation goes here.
 }
 
@@ -51,6 +53,7 @@ function logicalOr(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
  */
 function invertBoolean(bool) {
+  return bool = !bool;
   // Implementation goes here.
 }
 
@@ -61,6 +64,7 @@ function invertBoolean(bool) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while
  */
 function countDigits(num) {
+  return num.toString().length;
   // Implementation goes here.
 }
 
@@ -71,6 +75,13 @@ function countDigits(num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
  */
 function sumOfDigits(num) {
+  let sum = 0;
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+
   // Implementation goes here.
 }
 
@@ -81,8 +92,15 @@ function sumOfDigits(num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
  */
 function reverseNumber(num) {
-  // Implementation goes here.
+  let reversed = 0;
+  num = Math.abs(num);
+  while (num > 0) {
+    reversed = reversed * 10 + num % 10;
+    num = Math.floor(num / 10);
+  }
+  return reversed;
 }
+// Implementation goes here.
 
 /**
  * Determines if a number is within a given range, inclusive.
@@ -93,6 +111,7 @@ function reverseNumber(num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
  */
 function isWithinRange(num, min, max) {
+  return num >= min && num <= max;
   // Implementation goes here.
 }
 

@@ -19,6 +19,7 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
  */
 function isString(str) {
+  return typeof str == 'string';
   // Implementation goes here.
 }
 
@@ -29,6 +30,7 @@ function isString(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality
  */
 function isBlank(str) {
+  return str == '';
   // Implementation goes here.
 }
 
@@ -42,6 +44,7 @@ function isBlank(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition
  */
 function sayHelloOrBye(name, num) {
+  return (num === 0 ? 'Hello ' : 'Bye ') + name;
   // Implementation goes here.
 }
 
@@ -53,6 +56,7 @@ function sayHelloOrBye(name, num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality
  */
 function compareStrings(str1, str2) {
+  return str1 === str2;
   // Implementation goes here.
 }
 
@@ -67,6 +71,7 @@ function compareStrings(str1, str2) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
  */
 function isUpperCase(str) {
+  return str == str.toUpperCase();
   // Implementation goes here.
 }
 
@@ -77,6 +82,7 @@ function isUpperCase(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
  */
 function isLowerCase(str) {
+  return str == str.toLowerCase();
   // Implementation goes here.
 }
 
@@ -88,6 +94,7 @@ function isLowerCase(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
  */
 function hasLength(str, length) {
+  return str.length == length;
   // Implementation goes here.
 }
 
@@ -99,6 +106,7 @@ function hasLength(str, length) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
  */
 function startsWithSubstring(str, prefix) {
+  return str.startsWith(prefix);
   // Implementation goes here.
 }
 
@@ -110,6 +118,7 @@ function startsWithSubstring(str, prefix) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
  */
 function endsWithSubstring(str, suffix) {
+  return str.endsWith(suffix);
   // Implementation goes here.
 }
 
@@ -121,6 +130,7 @@ function endsWithSubstring(str, suffix) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
  */
 function containsSubstring(str, substring) {
+  return str.includes(substring);
   // Implementation goes here.
 }
 
@@ -130,6 +140,7 @@ function containsSubstring(str, substring) {
  * @returns {boolean} - True if str contains only letters.
  */
 function isAlpha(str) {
+  return /^[A-Za-z]+$/.test(str);
   // Implementation goes here.
 }
 
@@ -139,6 +150,7 @@ function isAlpha(str) {
  * @returns {boolean} - True if str contains only digits.
  */
 function containsOnlyDigits(str) {
+  return /^[0-9]+$/.test(str);
   // Implementation goes here.
 }
 
@@ -149,6 +161,7 @@ function containsOnlyDigits(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
  */
 function isEmptyOrWhitespace(str) {
+  return str.trim().length == 0;
   // Implementation goes here.
 }
 
